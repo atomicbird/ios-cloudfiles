@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>username</key>
+	<string>your-username</string>
+	<key>api_key</key>
+	<string>your-api-key</string>
+	<key>auth_url</key>
+	<string>https://auth.api.rackspacecloud.com/v1.0</string>
+</dict>
+</plist>

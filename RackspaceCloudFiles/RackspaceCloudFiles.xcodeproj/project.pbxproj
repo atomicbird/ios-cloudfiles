@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		277BDDCF1460B8AC0096FBC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277BDDCE1460B8AC0096FBC8 /* Foundation.framework */; };
+		277BDDDD1460B8AC0096FBC8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277BDDDC1460B8AC0096FBC8 /* SenTestingKit.framework */; };
+		277BDDDF1460B8AC0096FBC8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277BDDDE1460B8AC0096FBC8 /* UIKit.framework */; };
+		277BDDE01460B8AC0096FBC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277BDDCE1460B8AC0096FBC8 /* Foundation.framework */; };
+		277BDDE31460B8AC0096FBC8 /* libRackspaceCloudFiles.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 277BDDCB1460B8AC0096FBC8 /* libRackspaceCloudFiles.a */; };
+		277BDDE91460B8AC0096FBC8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 277BDDE71460B8AC0096FBC8 /* InfoPlist.strings */; };
+		277BDDEC1460B8AC0096FBC8 /* RackspaceCloudFilesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 277BDDEB1460B8AC0096FBC8 /* RackspaceCloudFilesTests.m */; };
+		27A156F11461F47D00F7702E /* RSCDNContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 27A156E71461F47D00F7702E /* RSCDNContainer.h */; };
+		27A156F21461F47D00F7702E /* RSCDNContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A156E81461F47D00F7702E /* RSCDNContainer.m */; };
+		27A156F31461F47D00F7702E /* RSCDNContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A156E81461F47D00F7702E /* RSCDNContainer.m */; };
+		27A156F41461F47D00F7702E /* RSClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 27A156E91461F47D00F7702E /* RSClient.h */; };
+		27A156F51461F47D00F7702E /* RSClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A156EA1461F47D00F7702E /* RSClient.m */; };
+		27A156F61461F47D00F7702E /* RSClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A156EA1461F47D00F7702E /* RSClient.m */; };
+		27A156F71461F47D00F7702E /* RSContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 27A156EB1461F47D00F7702E /* RSContainer.h */; };
+		27A156F81461F47D00F7702E /* RSContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A156EC1461F47D00F7702E /* RSContainer.m */; };
+		27A156F91461F47D00F7702E /* RSContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A156EC1461F47D00F7702E /* RSContainer.m */; };
+		27A156FA1461F47D00F7702E /* RSModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 27A156ED1461F47D00F7702E /* RSModel.h */; };
+		27A156FB1461F47D00F7702E /* RSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A156EE1461F47D00F7702E /* RSModel.m */; };
+		27A156FC1461F47D00F7702E /* RSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A156EE1461F47D00F7702E /* RSModel.m */; };
+		27A156FD1461F47D00F7702E /* RSStorageObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 27A156EF1461F47D00F7702E /* RSStorageObject.h */; };
+		27A156FE1461F47D00F7702E /* RSStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A156F01461F47D00F7702E /* RSStorageObject.m */; };
+		27A156FF1461F47D00F7702E /* RSStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A156F01461F47D00F7702E /* RSStorageObject.m */; };
+		27DEE8D61462FD600063E997 /* RackspaceCloudFilesTests.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27DEE8D51462FD600063E997 /* RackspaceCloudFilesTests.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		277BDDE11460B8AC0096FBC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 277BDDC21460B8AC0096FBC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 277BDDCA1460B8AC0096FBC8;
+			remoteInfo = RackspaceCloudFiles;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		277BDDCB1460B8AC0096FBC8 /* libRackspaceCloudFiles.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRackspaceCloudFiles.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		277BDDCE1460B8AC0096FBC8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		277BDDD21460B8AC0096FBC8 /* RackspaceCloudFiles-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RackspaceCloudFiles-Prefix.pch"; sourceTree = "<group>"; };
+		277BDDDB1460B8AC0096FBC8 /* RackspaceCloudFilesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RackspaceCloudFilesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		277BDDDC1460B8AC0096FBC8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		277BDDDE1460B8AC0096FBC8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		277BDDE61460B8AC0096FBC8 /* RackspaceCloudFilesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RackspaceCloudFilesTests-Info.plist"; sourceTree = "<group>"; };
+		277BDDE81460B8AC0096FBC8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		277BDDEA1460B8AC0096FBC8 /* RackspaceCloudFilesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = RackspaceCloudFilesTests.h; sourceTree = "<group>"; };
+		277BDDEB1460B8AC0096FBC8 /* RackspaceCloudFilesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RackspaceCloudFilesTests.m; sourceTree = "<group>"; };
+		27A156E71461F47D00F7702E /* RSCDNContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSCDNContainer.h; path = Source/RSCDNContainer.h; sourceTree = SOURCE_ROOT; };
+		27A156E81461F47D00F7702E /* RSCDNContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSCDNContainer.m; path = Source/RSCDNContainer.m; sourceTree = SOURCE_ROOT; };
+		27A156E91461F47D00F7702E /* RSClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSClient.h; path = Source/RSClient.h; sourceTree = SOURCE_ROOT; };
+		27A156EA1461F47D00F7702E /* RSClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSClient.m; path = Source/RSClient.m; sourceTree = SOURCE_ROOT; };
+		27A156EB1461F47D00F7702E /* RSContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSContainer.h; path = Source/RSContainer.h; sourceTree = SOURCE_ROOT; };
+		27A156EC1461F47D00F7702E /* RSContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSContainer.m; path = Source/RSContainer.m; sourceTree = SOURCE_ROOT; };
+		27A156ED1461F47D00F7702E /* RSModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSModel.h; path = Source/RSModel.h; sourceTree = SOURCE_ROOT; };
+		27A156EE1461F47D00F7702E /* RSModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSModel.m; path = Source/RSModel.m; sourceTree = SOURCE_ROOT; };
+		27A156EF1461F47D00F7702E /* RSStorageObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSStorageObject.h; path = Source/RSStorageObject.h; sourceTree = SOURCE_ROOT; };
+		27A156F01461F47D00F7702E /* RSStorageObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSStorageObject.m; path = Source/RSStorageObject.m; sourceTree = SOURCE_ROOT; };
+		27DEE8D51462FD600063E997 /* RackspaceCloudFilesTests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RackspaceCloudFilesTests.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		277BDDC81460B8AC0096FBC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				277BDDCF1460B8AC0096FBC8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		277BDDD71460B8AC0096FBC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				277BDDDD1460B8AC0096FBC8 /* SenTestingKit.framework in Frameworks */,
+				277BDDDF1460B8AC0096FBC8 /* UIKit.framework in Frameworks */,
+				277BDDE01460B8AC0096FBC8 /* Foundation.framework in Frameworks */,
+				277BDDE31460B8AC0096FBC8 /* libRackspaceCloudFiles.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		277BDDC01460B8AC0096FBC8 = {
+			isa = PBXGroup;
+			children = (
+				277BDDD01460B8AC0096FBC8 /* RackspaceCloudFiles */,
+				277BDDE41460B8AC0096FBC8 /* RackspaceCloudFilesTests */,
+				277BDDCD1460B8AC0096FBC8 /* Frameworks */,
+				277BDDCC1460B8AC0096FBC8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		277BDDCC1460B8AC0096FBC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				277BDDCB1460B8AC0096FBC8 /* libRackspaceCloudFiles.a */,
+				277BDDDB1460B8AC0096FBC8 /* RackspaceCloudFilesTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		277BDDCD1460B8AC0096FBC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				277BDDCE1460B8AC0096FBC8 /* Foundation.framework */,
+				277BDDDC1460B8AC0096FBC8 /* SenTestingKit.framework */,
+				277BDDDE1460B8AC0096FBC8 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		277BDDD01460B8AC0096FBC8 /* RackspaceCloudFiles */ = {
+			isa = PBXGroup;
+			children = (
+				27A156E61461F47000F7702E /* Source */,
+				277BDDD11460B8AC0096FBC8 /* Supporting Files */,
+			);
+			path = RackspaceCloudFiles;
+			sourceTree = "<group>";
+		};
+		277BDDD11460B8AC0096FBC8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				277BDDD21460B8AC0096FBC8 /* RackspaceCloudFiles-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		277BDDE41460B8AC0096FBC8 /* RackspaceCloudFilesTests */ = {
+			isa = PBXGroup;
+			children = (
+				277BDDEA1460B8AC0096FBC8 /* RackspaceCloudFilesTests.h */,
+				277BDDEB1460B8AC0096FBC8 /* RackspaceCloudFilesTests.m */,
+				277BDDE51460B8AC0096FBC8 /* Supporting Files */,
+				27DEE8D51462FD600063E997 /* RackspaceCloudFilesTests.plist */,
+			);
+			path = RackspaceCloudFilesTests;
+			sourceTree = "<group>";
+		};
+		277BDDE51460B8AC0096FBC8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				277BDDE61460B8AC0096FBC8 /* RackspaceCloudFilesTests-Info.plist */,
+				277BDDE71460B8AC0096FBC8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27A156E61461F47000F7702E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				27A156E71461F47D00F7702E /* RSCDNContainer.h */,
+				27A156E81461F47D00F7702E /* RSCDNContainer.m */,
+				27A156E91461F47D00F7702E /* RSClient.h */,
+				27A156EA1461F47D00F7702E /* RSClient.m */,
+				27A156EB1461F47D00F7702E /* RSContainer.h */,
+				27A156EC1461F47D00F7702E /* RSContainer.m */,
+				27A156ED1461F47D00F7702E /* RSModel.h */,
+				27A156EE1461F47D00F7702E /* RSModel.m */,
+				27A156EF1461F47D00F7702E /* RSStorageObject.h */,
+				27A156F01461F47D00F7702E /* RSStorageObject.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		277BDDC91460B8AC0096FBC8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27A156F11461F47D00F7702E /* RSCDNContainer.h in Headers */,
+				27A156F41461F47D00F7702E /* RSClient.h in Headers */,
+				27A156F71461F47D00F7702E /* RSContainer.h in Headers */,
+				27A156FA1461F47D00F7702E /* RSModel.h in Headers */,
+				27A156FD1461F47D00F7702E /* RSStorageObject.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		277BDDCA1460B8AC0096FBC8 /* RackspaceCloudFiles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 277BDDEF1460B8AC0096FBC8 /* Build configuration list for PBXNativeTarget "RackspaceCloudFiles" */;
+			buildPhases = (
+				277BDDC71460B8AC0096FBC8 /* Sources */,
+				277BDDC81460B8AC0096FBC8 /* Frameworks */,
+				277BDDC91460B8AC0096FBC8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RackspaceCloudFiles;
+			productName = RackspaceCloudFiles;
+			productReference = 277BDDCB1460B8AC0096FBC8 /* libRackspaceCloudFiles.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		277BDDDA1460B8AC0096FBC8 /* RackspaceCloudFilesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 277BDDF21460B8AC0096FBC8 /* Build configuration list for PBXNativeTarget "RackspaceCloudFilesTests" */;
+			buildPhases = (
+				277BDDD61460B8AC0096FBC8 /* Sources */,
+				277BDDD71460B8AC0096FBC8 /* Frameworks */,
+				277BDDD81460B8AC0096FBC8 /* Resources */,
+				277BDDD91460B8AC0096FBC8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				277BDDE21460B8AC0096FBC8 /* PBXTargetDependency */,
+			);
+			name = RackspaceCloudFilesTests;
+			productName = RackspaceCloudFilesTests;
+			productReference = 277BDDDB1460B8AC0096FBC8 /* RackspaceCloudFilesTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		277BDDC21460B8AC0096FBC8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 277BDDC51460B8AC0096FBC8 /* Build configuration list for PBXProject "RackspaceCloudFiles" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 277BDDC01460B8AC0096FBC8;
+			productRefGroup = 277BDDCC1460B8AC0096FBC8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				277BDDCA1460B8AC0096FBC8 /* RackspaceCloudFiles */,
+				277BDDDA1460B8AC0096FBC8 /* RackspaceCloudFilesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		277BDDD81460B8AC0096FBC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				277BDDE91460B8AC0096FBC8 /* InfoPlist.strings in Resources */,
+				27DEE8D61462FD600063E997 /* RackspaceCloudFilesTests.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		277BDDD91460B8AC0096FBC8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		277BDDC71460B8AC0096FBC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27A156F21461F47D00F7702E /* RSCDNContainer.m in Sources */,
+				27A156F51461F47D00F7702E /* RSClient.m in Sources */,
+				27A156F81461F47D00F7702E /* RSContainer.m in Sources */,
+				27A156FB1461F47D00F7702E /* RSModel.m in Sources */,
+				27A156FE1461F47D00F7702E /* RSStorageObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		277BDDD61460B8AC0096FBC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				277BDDEC1460B8AC0096FBC8 /* RackspaceCloudFilesTests.m in Sources */,
+				27A156F31461F47D00F7702E /* RSCDNContainer.m in Sources */,
+				27A156F61461F47D00F7702E /* RSClient.m in Sources */,
+				27A156F91461F47D00F7702E /* RSContainer.m in Sources */,
+				27A156FC1461F47D00F7702E /* RSModel.m in Sources */,
+				27A156FF1461F47D00F7702E /* RSStorageObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		277BDDE21460B8AC0096FBC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 277BDDCA1460B8AC0096FBC8 /* RackspaceCloudFiles */;
+			targetProxy = 277BDDE11460B8AC0096FBC8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		277BDDE71460B8AC0096FBC8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				277BDDE81460B8AC0096FBC8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		277BDDED1460B8AC0096FBC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		277BDDEE1460B8AC0096FBC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		277BDDF01460B8AC0096FBC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/RackspaceCloudFiles.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RackspaceCloudFiles/RackspaceCloudFiles-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		277BDDF11460B8AC0096FBC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/RackspaceCloudFiles.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RackspaceCloudFiles/RackspaceCloudFiles-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		277BDDF31460B8AC0096FBC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RackspaceCloudFiles/RackspaceCloudFiles-Prefix.pch";
+				INFOPLIST_FILE = "RackspaceCloudFilesTests/RackspaceCloudFilesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		277BDDF41460B8AC0096FBC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RackspaceCloudFiles/RackspaceCloudFiles-Prefix.pch";
+				INFOPLIST_FILE = "RackspaceCloudFilesTests/RackspaceCloudFilesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		277BDDC51460B8AC0096FBC8 /* Build configuration list for PBXProject "RackspaceCloudFiles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				277BDDED1460B8AC0096FBC8 /* Debug */,
+				277BDDEE1460B8AC0096FBC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		277BDDEF1460B8AC0096FBC8 /* Build configuration list for PBXNativeTarget "RackspaceCloudFiles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				277BDDF01460B8AC0096FBC8 /* Debug */,
+				277BDDF11460B8AC0096FBC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		277BDDF21460B8AC0096FBC8 /* Build configuration list for PBXNativeTarget "RackspaceCloudFilesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				277BDDF31460B8AC0096FBC8 /* Debug */,
+				277BDDF41460B8AC0096FBC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 277BDDC21460B8AC0096FBC8 /* Project object */;
+}
