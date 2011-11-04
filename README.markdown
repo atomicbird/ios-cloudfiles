@@ -29,7 +29,7 @@ To use a static library, open the RackspaceCloudFiles project in Xcode and build
 
 To install the documentation, go into Xcode Preferences, and choose the Downloads tab.  From there, choose Documentation on the segmented control and press the + button on the bottom left of the window.  For the feed URL, enter the following:
 
-https://github.com/rackspace/ios-cloudfiles/raw/master/RackspaceCloudFiles/appledoc/publish/com.rackspace.Rackspace-Cloud-Files.atom
+http://overhrd.com/rackspace/com.rackspace.Rackspace-Cloud-Files.atom
 
 ## Classes
 

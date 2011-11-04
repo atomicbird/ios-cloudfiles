@@ -1,18 +1,18 @@
 <?xml version="1.0" standalone="no"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:docset="http://developer.apple.com/rss/docset_extensions" xml:lang="en">
-    <id>http://overhrd.com/rackspace/publish/com.rackspace.Rackspace-Cloud-Files.atom/20111104114001</id>
+    <id>http://overhrd.com/rackspace/com.rackspace.Rackspace-Cloud-Files.atom/20111104120522</id>
     <title type="text">Rackspace Cloud Files Documentation</title>
     <rights>Copyright © 2011 Rackspace. All rights reserved.</rights>
-    <link rel="self" href="http://overhrd.com/rackspace/publish/com.rackspace.Rackspace-Cloud-Files.atom"></link>
+    <link rel="self" href="http://overhrd.com/rackspace/com.rackspace.Rackspace-Cloud-Files.atom"></link>
     <docset:publisherName>Rackspace</docset:publisherName>
     <docset:publisherID>com.rackspace.documentation</docset:publisherID>
-    <updated>2011-11-04T11:40:01-07:00</updated>
+    <updated>2011-11-04T12:05:22-07:00</updated>
     <entry>
         <id>tag:overhrd.com,2011-11-04:com.rackspace.Rackspace-Cloud-Files/1.0.0</id>
         <title type="text">Rackspace Cloud Files Documentation</title>
-        <updated>2011-11-04T11:40:01-07:00</updated>
+        <updated>2011-11-04T12:05:22-07:00</updated>
         <content type="text">Rackspace Cloud Files Documentation (v1.0.0)</content>
-        <link rel="enclosure" type="application/octet-stream" href="http://overhrd.com/rackspace/com.rackspace.Rackspace-Cloud-Files-1.0.xar" length="18962"></link>
+        <link rel="enclosure" type="application/octet-stream" href="http://overhrd.com/rackspace/com.rackspace.Rackspace-Cloud-Files-1.0.xar" length="68853"></link>
         <docset:identifier>com.rackspace.Rackspace-Cloud-Files</docset:identifier>
         <docset:version>1.0.0</docset:version>
         <docset:minimumXcodeVersion>3.0.0</docset:minimumXcodeVersion>
