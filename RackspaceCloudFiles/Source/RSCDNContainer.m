@@ -41,7 +41,9 @@
 - (void)purgeCDNObject:(RSStorageObject *)object success:(void (^)())successHandler failure:(void (^)(NSHTTPURLResponse*, NSData*, NSError*))failureHandler {
     
     [self.client sendAsynchronousRequest:@selector(purgeCDNObjectRequest:) object:object sender:self successHandler:^(NSHTTPURLResponse *response, NSData *data, NSError *error) {
-        successHandler();        
+        if (successHandler) {
+            successHandler();        
+        }
     } failureHandler:failureHandler];
     
 }

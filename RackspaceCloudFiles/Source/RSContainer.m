@@ -57,7 +57,9 @@
         NSError *jsonError = nil;
         NSArray *dictionaries = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&jsonError];
         
-        successHandler([RSStorageObject arrayFromJSONDictionaries:dictionaries parent:self], jsonError);
+        if (successHandler) {
+            successHandler([RSStorageObject arrayFromJSONDictionaries:dictionaries parent:self], jsonError);
+        }
         
     } failureHandler:failureHandler];
     
@@ -82,7 +84,10 @@
         
         object.etag = [[response allHeaderFields] valueForKey:@"ETag"];        
         object.parent = self;
-        successHandler();
+
+        if (successHandler) {
+            successHandler();
+        }
         
     } failureHandler:failureHandler];
     
@@ -104,7 +109,9 @@
 - (void)deleteObject:(RSStorageObject *)object success:(void (^)())successHandler failure:(void (^)(NSHTTPURLResponse*, NSData*, NSError*))failureHandler {
     
     [self.client sendAsynchronousRequest:@selector(deleteObjectRequest:) object:object sender:self successHandler:^(NSHTTPURLResponse *response, NSData *data, NSError *error) {        
-        successHandler();        
+        if (successHandler) {
+            successHandler();        
+        }
     } failureHandler:failureHandler];
     
 }

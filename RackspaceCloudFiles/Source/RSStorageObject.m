@@ -44,7 +44,10 @@
 
         self.etag = [[response allHeaderFields] valueForKey:@"ETag"];
         self.data = responseData;
-        successHandler();
+
+        if (successHandler) {
+            successHandler();
+        }
         
     } failureHandler:failureHandler];    
     
@@ -56,7 +59,10 @@
 
         self.etag = [[response allHeaderFields] valueForKey:@"ETag"];
         [responseData writeToFile:path atomically:atomically];
-        successHandler();
+
+        if (successHandler) {
+            successHandler();
+        }
         
     } failureHandler:failureHandler];    
     
@@ -83,7 +89,10 @@
             }
             
         }
-        successHandler();
+
+        if (successHandler) {
+            successHandler();
+        }
         
     } failureHandler:failureHandler];    
     
@@ -106,7 +115,9 @@
 - (void)updateMetadata:(void (^)())successHandler failure:(void (^)(NSHTTPURLResponse*, NSData*, NSError*))failureHandler {
     
     [self.client sendAsynchronousRequest:@selector(updateMetadataRequest) sender:self successHandler:^(NSHTTPURLResponse *response, NSData *responseData, NSError *error) {
-        successHandler();
+        if (successHandler) {
+            successHandler();
+        }
     } failureHandler:failureHandler];    
 
 }

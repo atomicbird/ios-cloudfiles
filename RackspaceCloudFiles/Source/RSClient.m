@@ -121,7 +121,9 @@
             
         } failure:^(NSHTTPURLResponse *response, NSData *data, NSError *error) {
             
-            failureHandler(response, data, error);
+            if (failureHandler) {
+                failureHandler(response, data, error);
+            }
             
         }];
         
@@ -160,7 +162,10 @@
             self.storageURL = [headers objectForKey:@"X-Storage-Url"];
             self.cdnManagementURL = [headers objectForKey:@"X-Cdn-Management-Url"];
             self.authenticated = YES;
-            successHandler();
+            
+            if (successHandler) {
+                successHandler();
+            }
             
         } else {
             
@@ -184,12 +189,16 @@
                 
                 NSError *myError = [[NSError alloc] initWithDomain:RSErrorDomain
                                                        code:errCode userInfo:eDict];
-                
-                failureHandler(response, data, myError);
+
+                if (failureHandler) {
+                    failureHandler(response, data, myError);
+                }
                 
             } else {
             
-                failureHandler(response, data, error);
+                if (failureHandler) {
+                    failureHandler(response, data, error);
+                }
                 
             }
             
@@ -218,7 +227,10 @@
         
         self.containerCount = [[formatter numberFromString:[headers objectForKey:@"X-Account-Container-Count"]] unsignedIntegerValue];
         self.totalBytesUsed = [[formatter numberFromString:[headers objectForKey:@"X-Account-Bytes-Used"]] unsignedIntegerValue];
-        successHandler();
+        
+        if (successHandler) {
+            successHandler();
+        }
     
     } failureHandler:failureHandler];
     
@@ -258,8 +270,10 @@
         
         NSError *jsonError = nil;
         NSArray *containerDictionaries = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&jsonError];
-                
-        successHandler([RSContainer arrayFromJSONDictionaries:containerDictionaries parent:self], jsonError);
+               
+        if (successHandler) {
+            successHandler([RSContainer arrayFromJSONDictionaries:containerDictionaries parent:self], jsonError);
+        }
         
     } failureHandler:failureHandler];
     
@@ -284,7 +298,9 @@
 - (void)createContainer:(id)container success:(void (^)())successHandler failure:(void (^)(NSHTTPURLResponse*, NSData*, NSError*))failureHandler {
     
     [self sendAsynchronousRequest:@selector(createContainerRequest:) object:container sender:self successHandler:^(NSHTTPURLResponse *response, NSData *data, NSError *error) {        
-        successHandler();        
+        if (successHandler) {
+            successHandler();        
+        }
     } failureHandler:failureHandler];
     
 }
@@ -300,7 +316,9 @@
 - (void)deleteContainer:(id)container success:(void (^)())successHandler failure:(void (^)(NSHTTPURLResponse*, NSData*, NSError*))failureHandler {
     
     [self sendAsynchronousRequest:@selector(deleteContainerRequest:) object:container sender:self successHandler:^(NSHTTPURLResponse *response, NSData *data, NSError *error) {        
-        successHandler();        
+        if (successHandler) {
+            successHandler();        
+        }
     } failureHandler:failureHandler];
 
 }
@@ -327,8 +345,10 @@
                 
             }
         }
-        
-        successHandler();        
+
+        if (successHandler) {
+            successHandler();        
+        }
     } failureHandler:failureHandler];
     
 }
@@ -370,7 +390,9 @@
         NSError *jsonError = nil;
         NSArray *containerDictionaries = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&jsonError];
         
-        successHandler([RSCDNContainer arrayFromJSONDictionaries:containerDictionaries parent:self], jsonError);
+        if (successHandler) {
+            successHandler([RSCDNContainer arrayFromJSONDictionaries:containerDictionaries parent:self], jsonError);
+        }
         
     } failureHandler:failureHandler];
     
@@ -399,7 +421,10 @@
             }
         }
         
-        successHandler();        
+        if (successHandler) {
+            successHandler();        
+        }
+        
     } failureHandler:failureHandler];
     
 }
@@ -427,7 +452,9 @@
         cdnContainer.cdn_ssl_uri = [headers valueForKey:@"X-CDN-SSL-URI"];
         cdnContainer.cdn_streaming_uri = [headers valueForKey:@"X-CDN-STREAMING-URI"];
         
-        successHandler(cdnContainer);
+        if (successHandler) {
+            successHandler(cdnContainer);
+        }
         
     } failureHandler:failureHandler];
     
@@ -450,7 +477,9 @@
 - (void)updateCDNContainer:(RSCDNContainer *)container success:(void (^)())successHandler failure:(void (^)(NSHTTPURLResponse*, NSData*, NSError*))failureHandler {
     
     [self sendAsynchronousRequest:@selector(cdnEnableContainerRequest:) object:container sender:self successHandler:^(NSHTTPURLResponse *response, NSData *data, NSError *error) {
-        successHandler();        
+        if (successHandler) {
+            successHandler();        
+        }
     } failureHandler:failureHandler];
 
 }
@@ -474,7 +503,9 @@
 - (void)purgeCDNContainer:(RSCDNContainer *)container success:(void (^)())successHandler failure:(void (^)(NSHTTPURLResponse*, NSData*, NSError*))failureHandler {
     
     [self sendAsynchronousRequest:@selector(purgeCDNContainerRequest:) object:container sender:self successHandler:^(NSHTTPURLResponse *response, NSData *data, NSError *error) {
-        successHandler();        
+        if (successHandler) {
+            successHandler();        
+        }
     } failureHandler:failureHandler];
     
 }
